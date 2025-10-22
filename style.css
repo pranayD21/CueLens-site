@@ -30,7 +30,7 @@ body {
   line-height: 1.6;
 }
 
-/* Skip link (a11y) */
+/* Skip link (accessibility) */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -45,7 +45,7 @@ body {
   top: 10px;
 }
 
-/* Nav */
+/* ---------- NAVIGATION ---------- */
 nav {
   background: var(--brand);
   color: #fff;
@@ -65,15 +65,16 @@ nav {
   text-decoration: none;
   margin-left: 1.25rem;
   padding-bottom: 3px;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
-.nav-links a:hover { opacity: .85; }
-/* underline the current page link */
+.nav-links a:hover {
+  opacity: 0.85;
+}
 .nav-links a[aria-current="page"] {
   border-bottom: 2px solid #fff;
 }
 
-/* Layout container: centered block with left-aligned text */
+/* ---------- CONTAINER ---------- */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -81,7 +82,7 @@ nav {
   text-align: left;
 }
 
-/* Headings */
+/* ---------- HEADINGS ---------- */
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -90,19 +91,28 @@ h1 {
 h2 {
   color: var(--brand);
   font-size: 1.35rem;
-  margin: 1.25rem 0 .5rem;
+  margin: 1.25rem 0 0.5rem;
 }
 
-/* Text & lists */
-p { margin-bottom: 1rem; line-height: 1.7; }
-strong { font-weight: 700; }
+/* ---------- TEXT & LISTS ---------- */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+strong {
+  font-weight: 700;
+}
 ul {
   list-style: disc;
-  margin: .5rem 0 1.25rem 1.25rem;
+  margin: 0.5rem 0 1.25rem 1.25rem;
   line-height: 1.7;
 }
 
-/* Buttons (downloads) */
+/* ---------- DOWNLOAD PAGE ---------- */
+main p:first-of-type {
+  text-align: center; /* Center-align the top instruction line */
+}
+
 .btn {
   display: inline-block;
   margin: 10px;
@@ -112,19 +122,77 @@ ul {
   border-radius: var(--radius);
   text-decoration: none;
   font-weight: 600;
-  transition: background .2s ease, transform .05s ease;
+  transition: background 0.2s ease, transform 0.05s ease;
 }
-.btn:hover { background: var(--brand-dark); }
-.btn:active { transform: translateY(1px); }
+.btn:hover {
+  background: var(--brand-dark);
+}
+.btn:active {
+  transform: translateY(1px);
+}
 
-/* Download sections */
 .download-section {
   margin-top: 42px;
   text-align: center;
 }
-.download-section h2 { text-align: center; }
-.note { font-size: .92rem; color: var(--muted); margin-top: 6px; }
+.download-section h2 {
+  text-align: center;
+}
+.note {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-top: 6px;
+  text-align: center;
+}
 
-/* Story timeline (subtle left rule for sections) */
+/* ---------- TIMELINE (Our Story) ---------- */
 .container section {
   margin-bottom: 56px;
+  position: relative;
+  padding-left: 16px;
+  border-left: 3px solid #e6e6e9;
+}
+.container section h2 {
+  margin-left: -16px;
+  padding-left: 12px;
+}
+.container section:last-child {
+  border-left: none;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: var(--bg-soft);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 60px;
+  width: 100%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 720px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .nav-links a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+  .container {
+    padding: 32px 16px;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+  }
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
