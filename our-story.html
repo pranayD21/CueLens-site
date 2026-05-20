@@ -2,103 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CueLens — Our Story</title>
+  <title>CueLens &mdash; Our Story</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The story behind CueLens — how a single story sparked an innovation in emotional accessibility." />
+  <meta name="description" content="The story behind CueLens: how one painful misunderstanding, early assistive prototypes, and community conversations shaped emotional accessibility." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="story-page">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <nav>
-    <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
-    <img src="CueLensLogo.png" alt="CueLens logo" style="height: 38px; margin-right: 10px;">
-    <span style="font-weight: bold; color: #4F46E5; font-size: 1.25rem;">CueLens</span>
-    </a>
-    <div class="nav-links">
-      <a href="index.html">About</a>
-      <a href="our-story.html" aria-current="page">Our Story</a>
-      <a href="downloads.html">Downloads</a>
-    </div>
-  </nav>
+  <header class="site-header">
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="index.html" class="logo brand-link" aria-label="CueLens home">
+        <img class="brand-logo" src="CueLensLogo.png" alt="CueLens logo" width="38" height="38" />
+        <span class="brand-name">CueLens</span>
+      </a>
+      <div class="nav-links primary-nav-links">
+        <a href="index.html">About</a>
+        <a href="our-story.html" aria-current="page">Our Story</a>
+        <a href="downloads.html">Downloads</a>
+      </div>
+    </nav>
+  </header>
 
   <main id="main">
-    <div class="container">
-      <h1>Our Story</h1>
+    <div class="story-shell">
+      <header class="story-hero" aria-labelledby="story-title">
+        <div>
+          <p class="story-kicker">The story behind CueLens</p>
+          <h1 id="story-title">Making emotional context easier to access.</h1>
+          <p class="story-lead">
+            CueLens grew from a painful misunderstanding, a prototype inspired by assistive
+            research, and dozens of conversations with autistic people, families, clinicians,
+            professors, and founders.
+          </p>
+        </div>
+        <aside class="story-note" aria-label="CueLens guiding idea">
+          <p>
+            <strong>Guiding idea:</strong> support communication without asking autistic or
+            neurodivergent people to change who they are.
+          </p>
+        </aside>
+      </header>
 
-      <section>
-        <h2>2024 — The Beginning</h2>
-        <p>
-          CueLens began with a story I’ll never forget — the story of <strong>Anish</strong>, 
-          a college graduate on the autism spectrum. While hanging out with friends, 
-          he misread their teasing as friendly banter. When the tone shifted and they grew frustrated, 
-          he couldn’t tell. One of them punched him in the face. 
-          That moment stuck with me — not because of the violence, but because of the misunderstanding. 
-          Anish didn’t lack empathy; he simply couldn’t read the cues.
-        </p>
-        <p>
-          I realized that communication breaks down not from a lack of emotion, 
-          but from the absence of understanding. That was the spark that became CueLens.
-        </p>
-      </section>
+      <div class="story-timeline" aria-label="CueLens development timeline">
+        <section class="story-event">
+          <div class="story-date">2024</div>
+          <article class="story-panel">
+            <h2>The Beginning</h2>
+            <p>
+              CueLens began with a story I will never forget: the story of
+              <strong>Anish</strong>, an autistic college graduate. While hanging out with
+              friends, he understood their teasing as friendly banter. When the tone shifted
+              and they grew frustrated, that escalation was not clear to him. One of them
+              punched him in the face.
+            </p>
+            <p>
+              That moment stayed with me because the harm came from a breakdown in shared
+              context. Anish did not lack empathy; he did not have reliable access to the
+              social cues others assumed were obvious. That realization became the spark for CueLens.
+            </p>
+          </article>
+        </section>
 
-      <section>
-        <h2>First Prototype</h2>
-        <p>
-          My first prototype was inspired by the <strong>Stanford Autism Glass Project</strong>. 
-          I built emotion-detecting glasses that used a small camera to identify facial expressions in real time 
-          and relayed the emotion through headphones — effectively creating “emotional subtitles” for the world around you. 
-          It was a scrappy build, but it proved the concept: technology could bridge the empathy gap.
-        </p>
-      </section>
+        <section class="story-event">
+          <div class="story-date">Prototype</div>
+          <article class="story-panel">
+            <h2>Emotion-Detecting Glasses</h2>
+            <p>
+              My first prototype was inspired by the <strong>Stanford Autism Glass Project</strong>.
+              I built emotion-detecting glasses that used a small camera to identify facial
+              expressions in real time and relay the detected emotion through headphones,
+              effectively creating "emotional subtitles" for the world around you.
+            </p>
+            <p>
+              It was a scrappy build, but it proved the concept: technology could provide
+              extra context at the exact moment communication becomes harder to interpret.
+            </p>
+          </article>
+        </section>
 
-      <section>
-        <h2>Startup Prep School</h2>
-        <p>
-          I applied to <strong>Santa Clara University’s Startup Prep School</strong> and became 
-          the <strong>first high school student</strong> ever accepted into the accelerator. 
-          There, I learned how to turn an idea into a scalable venture. 
-          I conducted and organized <strong>over 50 interviews</strong> with autistic individuals, psychologists, 
-          professors, and entrepreneurs. Listening to their stories shaped how CueLens could actually make a difference.
-        </p>
-        <p>
-          At the end of the program, our team competed in a national pitch competition — 
-          and against college founders from across the country, we won <strong>$500</strong>! 
-          That moment validated that the problem we were solving mattered.
-        </p>
-      </section>
+        <section class="story-event">
+          <div class="story-date">Accelerator</div>
+          <article class="story-panel">
+            <h2>Startup Prep School</h2>
+            <p>
+              I applied to <strong>Santa Clara University's Startup Prep School</strong> and
+              became the <strong>first high school student</strong> ever accepted into the
+              accelerator. There, I learned how to turn an idea into a scalable venture.
+            </p>
+            <p>
+              I conducted and organized <strong>over 50 interviews</strong> with autistic
+              people, psychologists, professors, and entrepreneurs. Listening to their stories
+              shaped how CueLens could be more useful, respectful, and accountable.
+            </p>
+          </article>
+        </section>
 
-      <section>
-        <h2>Redefining CueLens</h2>
-        <p>
-          By the end of the accelerator, I reimagined CueLens as an <strong>app that transcribes facial expressions 
-          during video calls</strong> — providing emotional context in digital communication. 
-          Over the summer, I worked with <strong>Mirro.ai</strong> to refine the model and deepen my understanding 
-          of emotion-recognition AI and ethical dataset design.
-        </p>
-      </section>
+        <section class="story-event">
+          <div class="story-date">Pitch</div>
+          <article class="story-panel">
+            <h2>National Recognition</h2>
+            <p>
+              At the end of the program, our team competed in a national pitch competition.
+              Against college founders from across the country, we won <strong>$500</strong>.
+              That moment validated that the problem we were solving mattered.
+            </p>
+          </article>
+        </section>
 
-      <section>
-        <h2>Global Collaboration</h2>
-        <p>
-          In the months since, I’ve been collaborating with families, therapists, and autism centers 
-          across <strong>three countries</strong> to make CueLens multilingual and culturally inclusive. 
-          Because emotions — and how we express them — look different across every language and culture, 
-          and a truly accessible AI must understand that diversity.
-        </p>
-        <p>
-          CueLens continues to grow with that mission: to make empathy more accessible, 
-          one expression at a time.
-        </p>
+        <section class="story-event">
+          <div class="story-date">Summer</div>
+          <article class="story-panel">
+            <h2>Redefining CueLens</h2>
+            <p>
+              By the end of the accelerator, I reimagined CueLens as an <strong>app that
+              adds context for facial expressions during video calls</strong>, supporting
+              digital communication with emotional subtitles.
+            </p>
+            <p>
+              Over the summer, I worked with <strong>Mirro.ai</strong> to refine the model and
+              deepen my understanding of expression-aware AI and ethical dataset design.
+            </p>
+          </article>
+        </section>
+
+        <section class="story-event">
+          <div class="story-date">Now</div>
+          <article class="story-panel">
+            <h2>Global Collaboration</h2>
+            <p>
+              In the months since, I have been collaborating with families, therapists, and
+              autism centers across <strong>three countries</strong> to make CueLens multilingual
+              and culturally inclusive.
+            </p>
+            <p>
+              Emotions, and how people express them, look different across language and culture.
+              Accessible AI should be designed with that diversity in mind.
+            </p>
+            <p class="story-quote">
+              CueLens continues to grow with that mission: to make social context easier to
+              access across neurotypes, languages, and cultures.
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <section class="story-principles" aria-label="What shaped CueLens">
+        <article class="story-principle">
+          <h2>Context Over Judgment</h2>
+          <p>
+            CueLens is built around the idea that unclear cues are an accessibility problem,
+            not a character flaw.
+          </p>
+        </article>
+        <article class="story-principle">
+          <h2>Listening Before Building</h2>
+          <p>
+            Interviews with autistic people, clinicians, educators, and founders shaped the
+            product from the beginning.
+          </p>
+        </article>
+        <article class="story-principle">
+          <h2>Cultural Humility</h2>
+          <p>
+            Multilingual support matters because emotional expression changes across languages,
+            cultures, and communities.
+          </p>
+        </article>
       </section>
     </div>
   </main>
 
-  <footer>
-    <p style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-      <span>© 2025 CueLens | Built by Pranay Dogra</span>
-      <span>Contact us: <a href="mailto:pranay.dogra21@gmail.com">pranay.dogra21@gmail.com</a></span>
-    </p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-credit">&copy; 2025 CueLens | Built by Pranay Dogra</p>
+      <p class="footer-contact">Contact us: <a href="mailto:pranay.dogra21@gmail.com">pranay.dogra21@gmail.com</a></p>
+    </div>
   </footer>
 </body>
 </html>

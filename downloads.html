@@ -5,55 +5,94 @@
   <title>Download CueLens</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Download CueLens for Windows or Mac in English or Taiwan regional builds." />
 </head>
 <body>
-  <nav>
-    <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
-    <img src="CueLensLogo.png" alt="CueLens logo" style="height: 38px; margin-right: 10px;">
-    <span style="font-weight: bold; color: #4F46E5; font-size: 1.25rem;">CueLens</span>
-    </a>
-    <div class="nav-links">
-      <a href="index.html">About</a>
-      <a href="our-story.html">Our Story</a>
-      <a href="downloads.html" class="active">Downloads</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="index.html" class="logo brand-link" aria-label="CueLens home">
+        <img class="brand-logo" src="CueLensLogo.png" alt="CueLens logo" width="38" height="38" />
+        <span class="brand-name">CueLens</span>
+      </a>
+      <div class="nav-links primary-nav-links">
+        <a href="index.html">About</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="downloads.html" class="active" aria-current="page">Downloads</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="downloads-page">
+    <div class="container downloads-container">
+      <header class="download-hero">
+        <p class="download-eyebrow">CueLens downloads</p>
+        <h1>Download CueLens</h1>
+        <p class="download-intro neurodivergent-sensitive-copy">
+          Choose the file for your computer and preferred language or region. Each option is listed clearly so you can
+          compare one choice at a time.
+        </p>
+      </header>
+
+      <div class="download-options" role="list" aria-label="Download options">
+        <article class="download-section download-card download-card--windows" role="listitem">
+          <div class="download-card-header">
+            <p class="download-platform">Windows</p>
+            <h2>Windows downloads</h2>
+            <p class="download-card-copy neurodivergent-sensitive-copy">
+              Use these installers on Windows devices. Pick English or the Taiwan regional build.
+            </p>
+          </div>
+          <div class="download-actions">
+            <a class="btn download-button download-button--windows download-button--english"
+               href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensWindowsEnglish.exe">
+              CueLens for Windows (English)
+            </a>
+            <a class="btn download-button download-button--windows download-button--taiwan"
+               href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensWindowsTaiwanese.exe">
+              CueLens for Windows (Taiwan)
+            </a>
+          </div>
+        </article>
+
+        <article class="download-section download-card download-card--mac" role="listitem">
+          <div class="download-card-header">
+            <p class="download-platform">Mac</p>
+            <h2>Mac downloads</h2>
+            <p class="download-card-copy neurodivergent-sensitive-copy">
+              Use these ZIP files on Mac devices. Pick English or the Taiwan regional build.
+            </p>
+          </div>
+          <div class="download-actions">
+            <a class="btn download-button download-button--mac download-button--english"
+               href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensMacEnglish.zip">
+              CueLens for Mac (English)
+            </a>
+            <a class="btn download-button download-button--mac download-button--taiwan"
+               href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensMacTaiwanese.zip">
+              CueLens for Mac (Taiwan)
+            </a>
+          </div>
+          <p class="note download-note">Mac downloads are ZIP files containing a <code>.app</code> bundle.</p>
+        </article>
+      </div>
+
+      <div class="download-support" role="region" aria-labelledby="download-support-title">
+        <h2 id="download-support-title">Need help choosing?</h2>
+        <p class="download-support-copy neurodivergent-sensitive-copy">
+          If you are unsure which file to use, choose the platform that matches your computer first, then choose the
+          region or language that feels most familiar.
+        </p>
+      </div>
     </div>
-  </nav>
-
-  <main>
-    <h1>Download CueLens</h1>
-    <p>Select your platform and region.</p>
-
-    <section class="download-section">
-      <h2>Windows</h2>
-      <a class="btn"
-         href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensWindowsEnglish.exe">
-        CueLens for Windows (English)
-      </a>
-      <a class="btn"
-         href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensWindowsTaiwanese.exe">
-        CueLens for Windows (Taiwan)
-      </a>
-    </section>
-
-    <section class="download-section">
-      <h2>Mac</h2>
-      <a class="btn"
-         href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensMacEnglish.zip">
-        CueLens for Mac (English)
-      </a>
-      <a class="btn"
-         href="https://github.com/pranayD21/CueLens-site/releases/latest/download/CueLensMacTaiwanese.zip">
-        CueLens for Mac (Taiwan)
-      </a>
-      <p class="note">Mac downloads are ZIP files containing a <code>.app</code> bundle.</p>
-    </section>
   </main>
 
-  <footer>
-    <p style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-      <span>© 2025 CueLens | Built by Pranay Dogra</span>
-      <span>Contact us: <a href="mailto:pranay.dogra21@gmail.com">pranay.dogra21@gmail.com</a></span>
-    </p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-credit">&copy; 2025 CueLens | Built by Pranay Dogra</p>
+      <p class="footer-contact">Contact us: <a href="mailto:pranay.dogra21@gmail.com">pranay.dogra21@gmail.com</a></p>
+    </div>
   </footer>
 </body>
 </html>

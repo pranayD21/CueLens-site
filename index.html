@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CueLens – Emotional Subtitles</title>
+  <title>CueLens &ndash; Emotional Subtitles</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CueLens adds real-time emotional subtitles to help autistic and neurodivergent people interpret facial expressions and tone.">
-  <meta property="og:title" content="CueLens – Emotional Subtitles">
-  <meta property="og:description" content="Real-time emotional subtitles for accessible, culturally aware communication.">
+  <meta name="description" content="CueLens adds real-time emotional subtitles that offer autistic and neurodivergent people optional context about facial-expression and tone cues.">
+  <meta property="og:title" content="CueLens &ndash; Emotional Subtitles">
+  <meta property="og:description" content="Real-time emotional subtitles for accessible, culturally aware communication across neurotypes and cultures.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cuelens.vercel.app/">
   <link rel="stylesheet" href="style.css">
@@ -15,55 +15,104 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <nav>
-    <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
-      <img src="CueLensLogo.png" alt="CueLens logo" style="height: 38px; margin-right: 10px;">
-      <span style="font-weight: bold; color: #4F46E5; font-size: 1.25rem;">CueLens</span>
-    </a>
-    <div class="nav-links">
-      <a href="index.html" aria-current="page">About</a>
-      <a href="our-story.html">Our Story</a>
-      <a href="downloads.html">Downloads</a>
-    </div>
-  </nav>
+  <header class="site-header">
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="index.html" class="logo brand-link" aria-label="CueLens home">
+        <img class="brand-logo" src="CueLensLogo.png" alt="CueLens logo" width="38" height="38">
+        <span class="brand-name">CueLens</span>
+      </a>
+      <div class="nav-links primary-nav-links">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="downloads.html">Downloads</a>
+      </div>
+    </nav>
+  </header>
 
-  <main id="main">
-    <div class="container">
-      <h1>About CueLens</h1>
-      <p>
-        CueLens provides real-time <strong>emotional subtitles</strong> to help autistic and other
-        neurodivergent people interpret facial expressions and tone. By combining emotion recognition
-        AI with accessibility design, CueLens bridges communication gaps across neurotypes and cultures.
-      </p>
+  <main id="main" class="home-main">
+    <section class="home-hero" aria-labelledby="about-heading">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="section-kicker">Emotional subtitles for accessible communication</p>
+          <h1 id="about-heading">About CueLens</h1>
+          <p class="hero-lede">
+            CueLens provides real-time <strong>emotional subtitles</strong> that offer autistic and
+            neurodivergent people optional context about facial-expression and tone cues. By combining
+            expression-aware AI with accessibility-centered design, CueLens supports clearer communication
+            across neurotypes, languages, and cultures.
+          </p>
+        </div>
 
-      <section class="founder">
-        <h2>Founder</h2>
-        <p><strong>Pranay Dogra</strong></p>
-        <p>
-          Hi, I'm Pranay — a Senior at Bellarmine College Preparatory in San Jose. I’ve been working on
-          CueLens for the past year, driven by my passion for socially conscious innovation and building AI
-          that’s equitable, inclusive, and empowering for neurodivergent communities.
-        </p>
-      </section>
-
-      <section class="mentors">
-        <h2>Mentors</h2>
-        <p>I couldn’t have made CueLens without the support and insight of these incredible mentors:</p>
-        <ul>
-          <br><strong>Dr. Shu-Chen Yen</strong> — Professor, Department of Child and Adolescent Studies, Cal State Fullerton
-          <br><strong>Dr. Tony Simon</strong> — Professor of Psychiatry and Behavioral Sciences, UC Davis MIND Institute
-          <br><strong>Dr. Ginny Ritchey</strong> — Clinical Psychologist, Summit Center
-          <br><strong>Dr. Sonya Arriola</strong> — Bellarmine College Preparatory, Ph.D. in Education
+        <ul class="cue-points" aria-label="CueLens focus areas">
+          <li class="cue-card">
+            <h2>Real-time context</h2>
+            <p>Emotional subtitles make expression and tone cues easier to access in the moment.</p>
+          </li>
+          <li class="cue-card">
+            <h2>Accessibility-led AI</h2>
+            <p>Expression-aware AI is paired with accessibility design to support neurodivergent users.</p>
+          </li>
+          <li class="cue-card">
+            <h2>Culturally aware communication</h2>
+            <p>CueLens is built for clearer communication across neurotypes, languages, and cultures.</p>
+          </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="founder-section profile-band" aria-labelledby="founder-heading">
+      <div class="container section-layout">
+        <div class="section-heading">
+          <p class="section-kicker">Builder</p>
+          <h2 id="founder-heading">Founder</h2>
+        </div>
+        <article class="profile-card founder-card">
+          <p class="profile-name"><strong>Pranay Dogra</strong></p>
+          <p>
+            Hi, I'm Pranay &mdash; a Senior at Bellarmine College Preparatory in San Jose. I&rsquo;ve been working on
+            CueLens for the past year, driven by my passion for socially conscious innovation and building AI
+            that&rsquo;s equitable, inclusive, and empowering for neurodivergent communities.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mentors-section support-band" aria-labelledby="mentors-heading">
+      <div class="container section-layout">
+        <div class="section-heading">
+          <p class="section-kicker">Advisors</p>
+          <h2 id="mentors-heading">Mentors</h2>
+        </div>
+        <div class="mentor-content">
+          <p>I couldn&rsquo;t have made CueLens without the support and insight of these incredible mentors:</p>
+          <ul class="mentor-list">
+            <li class="mentor-card">
+              <strong>Dr. Shu-Chen Yen</strong>
+              <span>Professor, Department of Child and Adolescent Studies, Cal State Fullerton</span>
+            </li>
+            <li class="mentor-card">
+              <strong>Dr. Tony Simon</strong>
+              <span>Professor of Psychiatry and Behavioral Sciences, UC Davis MIND Institute</span>
+            </li>
+            <li class="mentor-card">
+              <strong>Dr. Ginny Ritchey</strong>
+              <span>Clinical Psychologist, Summit Center</span>
+            </li>
+            <li class="mentor-card">
+              <strong>Dr. Sonya Arriola</strong>
+              <span>Bellarmine College Preparatory, Ph.D. in Education</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-      <span>© 2025 CueLens | Built by Pranay Dogra</span>
-      <span>Contact us: <a href="mailto:pranay.dogra21@gmail.com">pranay.dogra21@gmail.com</a></span>
-    </p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-credit">&copy; 2025 CueLens | Built by Pranay Dogra</p>
+      <p class="footer-contact">Contact us: <a href="mailto:pranay.dogra21@gmail.com">pranay.dogra21@gmail.com</a></p>
+    </div>
   </footer>
 </body>
 </html>
